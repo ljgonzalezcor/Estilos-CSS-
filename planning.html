@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="ESTILOS.css">
+    </head>
+    <body>
+    <center>
+        <h1 class="display-3">Objetivo General</h1>
+        <p>Identificar las diferentes formas de agregar estilos a elementos html</p>
+
+        <h1 class="display-3">Objetivo Especifico 1</h1>
+        <p>Conocer y comprender cual es el estilo interno en html</p>
+
+        <h1 class="display-3">Objetivo Especifico 2</h1>
+        <p>Comprender de que manera utilizar el estilo externo</p>
+
+        <h1 class="display-3">Objetivo Especifico 3</h1>
+        <p>Conocer cuales son los selectores CSS</p>
+</center>
+        <h1>Materiales</h1>
+        <p>Entorno de desarrollo Netbeans</p>
+        <a href="https://netbeans.org/">Link de descarga</a>
+
+
+
+        <h1>CSS3, ESTILOS INTERNOS Y EXTERNOS, SELECTORES CSS</h1>
+        <h2>ESTILOS INTERNOS</h2>
+        <p>Los estilos internos son definidos dentro del elemento <code>&lt;style&gt;</code> y &eacute;ste dentro de la secci&oacute;n <code>&lt;head&gt;</code> del documento HTML Ejemplo:</p>
+        <pre>&lt;!doctype html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />  &lt;style&gt;<br />    body {background: lightgrey;}<br />    h1 {color: blue;}<br />    p {color: green;}<br />  &lt;/style&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;h1&gt;Este es un encabezado&lt;/h1&gt;<br />  &lt;p&gt;Este es un p&aacute;rrafo&lt;/p&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>
+        <h2>ESTILOS EXTERNOS</h2>
+        <p>Las hojas de estilos externas, son utilizadas para definir el estilo en varias p&aacute;ginas con el mismo archivo externo CSS, as&iacute; es posible realizar cambios en este archivo y afectando su presentaci&oacute;n incluso para todo el sitio web.</p>
+        <p>Para usar una hoja de estilos externa (archivo CSS), se utiliza la etiqueta <code>&lt;link&gt;</code> en la secci&oacute;n <code>&lt;head&gt;</code> del documento HTML como a continuaci&oacute;n lo mostramos:</p>
+        <pre>&lt;!doctype html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />  &lt;link rel="stylesheet" href="/estilos.css"&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;h1&gt;Este es un encabezado&lt;/h2&gt;<br />  &lt;p&gt;Este es un p&aacute;rrafo&lt;/p&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>
+        <p>Una hoja de estilos CSS puede escribirse con cualquier editor de texto. El archivo no debe contener ninguna etiqueta HTML. El archivo de hoja de estilos debe ser guardada con la extensi&oacute;n .css.</p>
+        <p>Aqu&iacute; una muestra de como luce una hoja de estilos "estilos.css" de ejemplo:</p>
+        <pre>body {<br />  background-color: lightgrey;<br />}<br />h1 {<br />  color: blue;<br />}<br />p {<br />  color: green;<br />}</pre>
+        <h2>Selectores básicos</h2>
+
+        <dl>
+            <h3> Selector de tipo</h3>
+            <dd>Selecciona todos los elementos que coinciden con el nombre del elemento especificado.<br>
+                <strong>Sintaxis:</strong> <code><var>eltname</var></code><br>
+                <strong>Ejemplo:</strong> <code>input</code> se aplicará a cualquier elemento <a href="/es/docs/Web/HTML/Elemento/input" title="El elemento HTML &lt;input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que &lt;input> funciona varía considerablemente dependiendo del valor de su atributo type."><code>&lt;input&gt;</code></a>.</dd>
+            <h3>Selector de clase</h3>
+            <dd>Selecciona todos los elementos que tienen el atributo de <code>class</code> especificado.<br>
+                <strong>Sintaxis:</strong> <code>.<var>classname</var></code><br>
+                <strong>Ejemplo:</strong> <code>.index</code> seleccionará cualquier elemento que tenga la clase "<em>index</em>".</dd>
+            <h3>Selector de ID</h3>
+            <dd>Selecciona un elemento basándose en el valor de su atributo <code>id</code>. Solo puede haber un elemento con un determinado ID dentro de un documento.<br>
+                <strong>Sintaxis:</strong> <code>#<var>idname</var></code><br>
+                <strong>Ejemplo:</strong> <code>#toc</code> se aplicará a cualquier elemento que tenga el ID "<em>toc</em>".</dd>
+            <h3>Selector universal</h3>
+            <dd>Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.<br>
+                <strong>Sintaxis:</strong> <code>* ns|* *|*</code><br>
+                <strong>Ejemplo:</strong> <code>*</code> se aplicará a todos los elementos del documento.</dd>
+            <h3>Selector de atributo</h3>
+            <dd>Selecciona elementos basándose en el valor de un determinado atributo.<br>
+                <strong>Sintaxis:</strong> <code>[attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</code><br>
+                <strong>Ejemplo:</strong> <code>[autoplay]</code> seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier valor).</dd>
+        </dl>
+        <P>Mockup</P>
+        <img src="Mockup.png" alt="">
+        
+<a href="index.html">regresar a la pagina principal</a>
+    </body>
+</html>
